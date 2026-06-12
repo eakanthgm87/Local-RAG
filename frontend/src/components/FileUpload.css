@@ -1,0 +1,79 @@
+.upload-modal {
+  max-width: 460px;
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  border: 1px dashed rgba(255,255,255,0.12);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.dropzone:hover,
+.dropzone.drag-active {
+  border-color: var(--accent);
+  background: var(--accent-light);
+  box-shadow: 0 0 30px rgba(0, 122, 255, 0.08);
+}
+
+.dropzone.uploading {
+  pointer-events: none;
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+.dropzone-icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.dropzone.drag-active .dropzone-icon,
+.dropzone:hover .dropzone-icon {
+  color: var(--accent);
+  border-color: rgba(0, 122, 255, 0.2);
+  background: var(--accent-light);
+}
+
+.dropzone-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.dropzone-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.upload-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.upload-status p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}

@@ -1,0 +1,25 @@
+# Django
+Django==5.1.4
+djangorestframework==3.15.2
+django-cors-headers==4.6.0
+django-filter==24.3
+
+# Document parsing
+PyPDF2==3.0.1
+python-docx==1.1.2
+
+# RAG & Embeddings
+sentence-transformers==3.3.1
+chromadb==0.5.18
+chroma-hnswlib==0.7.6a9
+numpy==1.26.4
+
+# Hybrid Search (BM25 keyword search)
+rank-bm25==0.2.2
+
+# API & Utilities
+requests==2.32.3
+python-magic==0.4.27
+python-magic-bin==0.4.14
+Pillow==11.0.0
+python-decouple==3.8
